@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프론트엔드 개발자 지원서</title>
+    <style>
+      .container {
+        width: 520px;
+        border: 1px solid #000;
+        padding: 20px 40px;
+        margin: 20px auto;
+      }
+      .desc {
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 15px;
+      }
+      .info,
+      .cat {
+        margin: 0 0 0 30px;
+      }
+      .info > label {
+        display: inline-block;
+        width: 55px;
+        margin-bottom: 5px;
+      }
+      body {
+        margin: 0;
+      }
+      p {
+        margin: 3px 0;
+      }
+      /* textarea {
+        width: 100%;
+        height: 80px;
+        resize: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>프론트앤드 개발자 지원서</h1>
+      <p class="desc">
+        HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.
+      </p>
+      <h4>개인정보</h4>
+      <div class="info">
+        <label for="name">이름</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="공백없이 입력하세요."
+        /><br />
+        <label for="phone">연락처</label>
+        <input type="tel" id="phone" name="phone" />
+      </div>
+      <h4>지원 분야</h4>
+      <div class="cat">
+        <p>
+          <input
+            type="radio"
+            name="applyCat"
+            id="webPublishing"
+            value="웹퍼블리싱"
+          />
+          <label for="webPublishing">웹퍼블리싱</label>
+        </p>
+        <p>
+          <input
+            type="radio"
+            name="applyCat"
+            id="webFrontend"
+            value="웹 프론트앤드"
+          />
+          <label for="webFrontend">웹 프론트앤드</label>
+        </p>
+        <p>
+          <input
+            type="radio"
+            name="applyCat"
+            id="mobileApp"
+            value="모바일 앱"
+          />
+          <label for="mobileApp">모바일 앱</label>
+        </p>
+      </div>
+      <h4>지원동기</h4>
+      <div>
+        <label for="desc"></label>
+        <textarea name="desc" id="desc" cols="70" rows="5"></textarea>
+        <input type="submit" value="접수하기" />
+        <input type="reset" value="다시쓰기" />
+      </div>
+    </div>
+  </body>
+</html>
