@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* display: inline-block; 인라인 속성과 블록 속성 함께 가짐 */
+      /* a {
+        display: inline-block;
+        text-decoration: none;
+        background-color: darkslategray;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+      } */
+      img {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+      a > img {
+        width: 300px;
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- a 태그는 HTML에서 내부나 외부 링크를 생성 -->
+    <!-- 현재 탭에서 열기 -->
+    <a href="https://google.com">구글 페이지로 이동</a>
+    <!-- 새로운 탭에서 열기 -->
+    <a href="https://google.com" target="_blank"
+      >구글 페이지로 이동 <img src="./images/google_logo.png" alt="구글 로고"
+    /></a>
+    <a href="https://naver.com" target="_blank">네이버 페이지로 이동</a>
+    <hr />
+    <!-- 이미지 태그 / alt는 이미지 없을 때 띄울 문구 -->
+    <img src="./images/bear.png" alt="곰돌이 이미지 없음" />
+  </body>
+</html>

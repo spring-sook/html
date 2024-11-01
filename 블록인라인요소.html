@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .movie {
+        background-color: orange;
+        margin-bottom: 10px;
+        padding-left: 20px;
+      }
+      .tv {
+        background-color: royalblue;
+        padding-inline: 20px;
+      }
+      p {
+        margin: 0;
+      }
+      span {
+        color: red;
+        font-weight: bold;
+        background-color: antiquewhite;
+        display: block;
+        /*block(한 줄을 다 차지함): 앞뒤로 줄바꿈 됨*/
+      }
+      ol,
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML의 모든 요소는 display 속성값을 가짐 -->
+    <!-- display 속성은 크게 block과 inline으로 나누어짐 -->
+    <!-- block 요소는 해당 라인의 모든 너비를 차지함 -->
+    <!-- p, div, h, ul(unorder list), ol(order list), form -->
+    <div class="movie">
+      <h1>영화 소개</h1>
+      <p><span>영화</span>를 소개하는 페이지입니다</p>
+    </div>
+    <div class="tv">
+      <h1>TV 프로그램 소개</h1>
+      <p>TV 프로그램을 소개하는 페이지입니다.</p>
+    </div>
+    <!-- 리스트 만들기 -->
+    <h3>판매중인 과일 목록</h3>
+    <!-- unorder list -->
+    <ul>
+      <li>사과</li>
+      <li>멜론</li>
+      <li>바나나</li>
+    </ul>
+    <!-- order list -->
+    <ol>
+      <li>사과</li>
+      <li>멜론</li>
+      <li>바나나</li>
+    </ol>
+  </body>
+</html>
