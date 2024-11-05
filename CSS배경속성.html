@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*background-size: cover;*/ /* 이미지를 비율을 유지해서 채우는데 남으면 여백을 남김 / cover는 채우는데, 비율이 안맞는만큼 잘라냄 */
+      /* div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin-bottom: 10px;
+      }
+      .image {
+        width: 320px;
+        height: 260px;
+        background-image: url("/images/coffee.jpg");
+        background-repeat: no-repeat;
+        border: 1px solid black;
+        background-position: left;
+        background-size: cover;
+      } */
+      #containver {
+        height: 1000px;
+      }
+      .parent {
+        width: 320px;
+        height: 240px;
+        border: 1px solid black;
+        overflow: scroll;
+      }
+      .child {
+        height: 2000px;
+        background-attachment: scroll;
+        background-image: url("/images/activity.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </div>
+    <!-- <div class="image"></div> -->
+  </body>
+</html>

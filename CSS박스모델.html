@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 500px;
+        height: 300px;
+        display: flex;
+        padding: 20px;
+        margin: 10px;
+        /* gap: 10px; */
+        background-color: royalblue;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-sizing: border-box; */
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        color: white;
+        font-size: 20px;
+        /* padding: 20px;
+        margin: 10px; */
+        border: 1px solid #000;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px 13px orangered; /*x축 y축 흐림정도 번짐정도 색상*/
+      }
+      .box2 {
+        /*display: inline;*/ /* inline은 컨텐츠요소만큼만 잡음. 컨텐츠가 없으면 안나옴 */
+        /* inline-block은 크기만큼 블럭요소로 잡는데 줄바꿈을 안함. 인라인으로 취급해서 */
+        /* none은 없어짐.. 마우스 올렸을 때 쫙 나오고 이럴때 사용할 수도 있음. inline으로 사용할수 있을거같은데..? */
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: cadetblue;
+        border-right: 2px solid #000;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .box2:hover {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="box">박스 모델1</p>
+      <p class="box">박스 모델2</p>
+    </div>
+    <p class="box2">ㄹㄹㄹㄹ</p>
+    <p class="box2">ㄹㄹ</p>
+    <p class="box2">ㄹㄹㄹ</p>
+  </body>
+</html>
