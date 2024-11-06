@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #container {
+        max-width: 1200px;
+        /* min-width: 800px; */
+        display: flex;
+        background-color: beige;
+        position: relative;
+        flex-direction: column;
+      }
+      #header {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        position: sticky;
+        top: 0;
+        background-color: beige;
+        z-index: 1;
+      }
+      #main {
+        height: 3000px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: bisque;
+      }
+      #footer {
+        display: flex;
+        width: 100%;
+        height: 60px;
+        background-color: beige;
+        position: relative;
+      }
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .menu:nth-child(2) {
+        flex-grow: 1;
+      }
+      img {
+        display: flex;
+        height: 40px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+      ul {
+        display: flex;
+        list-style-type: none;
+        width: 100%;
+        height: auto;
+        font-size: 23px;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div class="menu"><img src="/images/google_icon.png" /></div>
+        <div class="menu">
+          <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+          </ul>
+        </div>
+        <div class="menu"><img src="/images/menu_icon.png" /></div>
+      </div>
+      <div id="main">main입니다.</div>
+      <div id="footer">Footer입니다.</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 300px;
+        background-color: orange;
+        position: relative;
+      }
+      body {
+        margin: 0;
+        height: 4000px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+      }
+      .red-box {
+        background-color: red;
+        position: relative;
+        transition: all 1s ease-in;
+      }
+      .red-box:hover {
+        scale: 1.1;
+        z-index: 1;
+      }
+      .green-box {
+        background-color: green;
+        /*position: absolute; /*absolute는 부모 기준으로 절대값만큼 움직임*/
+        /*position: relative; /*위치값은 가짐..*/
+        /*position: sticky;  /* 위치값 가짐.. 근데 fixed랑 차이 아직 모름 */
+        top: -80px;
+        left: 80px;
+        position: relative;
+        transition: all 1s ease-in;
+      }
+      .green-box:hover {
+        z-index: 1;
+        scale: 1.1;
+      }
+      .blue-box {
+        background-color: blue;
+        /*position: fixed; /*이것도 부모 기준으로 절대값만큼 움직이는데 스크롤 내려도 위치 항상 고정*/
+        top: 80px;
+        left: 20px;
+        position: absolute;
+        transition: all 1s ease-in;
+      }
+      .blue-box:hover {
+        scale: 1.1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box red-box">1</div>
+      <div class="box green-box">2</div>
+      <div class="box blue-box">3</div>
+    </div>
+  </body>
+</html>
