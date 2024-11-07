@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        margin: 20px;
+        /* grid-template-columns: 100px 1fr 100px; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-columns: repeat(auto-fit, minmax(50px, 200px)); */
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        /* grid-template-rows: repeat(3, minmax(20px, auto)); */
+        gap: 10px;
+        font-size: 16px;
+        align-items: stretch;
+      }
+      .grid-item {
+        background-color: royalblue;
+        color: white;
+      }
+      .grid-item:nth-child(2n) {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">박스 1번</div>
+      <div class="grid-item">박스 2번</div>
+      <div class="grid-item">박스 3번</div>
+      <div class="grid-item">박스 4번</div>
+      <div class="grid-item">박스 5번</div>
+      <div class="grid-item">박스 6번</div>
+      <div class="grid-item">박스 7번</div>
+      <div class="grid-item">박스 8번</div>
+      <div class="grid-item">박스 9번</div>
+    </div>
+  </body>
+</html>

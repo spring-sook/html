@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item {
+        width: 100px;
+        height: 100px;
+        margin: 100px;
+        background-color: red;
+        transition: all 0.6s ease-in;
+      }
+      .item:hover {
+        /*transform: translate(
+          100px,
+          150px
+        ); /*X축(오른쪽)으로 100px, Y축(아래)으로 150px*/
+        /*transform: scale(2); /*확대, 축소*/
+        /*transform: skewX(-30deg); /*오른쪽이 마이너스..? 기울기-보통 축 하나만 가지고 기울임*/
+        transform: rotate(180deg);
+        transform-origin: top left; /*회전 중심 꼭지점 정할 수 있음*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item"></div>
+  </body>
+</html>
